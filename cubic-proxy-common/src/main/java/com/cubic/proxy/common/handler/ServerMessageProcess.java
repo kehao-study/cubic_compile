@@ -1,0 +1,15 @@
+package com.cubic.proxy.common.handler;
+
+import com.cubic.proxy.common.server.MessageProcessor;
+import com.cubic.serialization.agent.v1.CommonMessage;
+
+/**
+ * @ClassName MessgaeProcess
+ * @Author QIANGLU
+ * @Date 2020/3/19 11:17 上午
+ * @Version 1.0
+ */
+public interface ServerMessageProcess extends MessageProcessor {
+
+    boolean ackSync(CommonMessage msg);
+}

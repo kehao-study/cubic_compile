@@ -60,7 +60,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.2</version>
+            <version>3.4.3.4</version>
         </dependency>
 
         <dependency>
@@ -194,8 +194,7 @@
                         <configuration>
                             <tasks>
                                 <mkdir dir="${project.basedir}/../agent-proxy-dist"/>
-                                <copy file="${project.build.directory}/cubic-proxy.jar"
-                                      tofile="${project.basedir}/../agent-proxy-dist/cubic-proxy.jar" overwrite="true"/>
+                                <copy file="${project.build.directory}/cubic-proxy.jar" tofile="${project.basedir}/../agent-proxy-dist/cubic-proxy.jar" overwrite="true"/>
                             </tasks>
                         </configuration>
                     </execution>
